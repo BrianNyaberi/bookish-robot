@@ -1,20 +1,23 @@
 <template>
-    <header>
-        <h1>Task Tracker</h1>
-    </header>
+  <header>
+    <h1>{{ title }}</h1>
+  </header>
 </template>
 
 <script>
-    export default {
-        name: 'Header',
+export default {
+  name: 'Header',
+  props: {
+    title: String,
+  },
 }
 </script>
 
-<style>
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 20px;
-    }
+<style scoped>
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
 </style>
